@@ -1,3 +1,7 @@
+# Python version
+
+* Python 3.7
+
 # MAC OS / LINUX
 
 1. Create python virtual environment:
