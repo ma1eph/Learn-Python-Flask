@@ -19,6 +19,7 @@ import main
 
 class MainTest(unittest.TestCase):
 
+
     def test_index(self):
         main.app.testing = True
         client = main.app.test_client()
@@ -26,7 +27,6 @@ class MainTest(unittest.TestCase):
         r = client.get('/')
         self.assertEqual(200, r.status_code)
         self.assertIn('Hello World', r.data.decode('utf-8'))
-        self.assertEqual(400, r.status_code)
 
 
 if __name__ == '__main__':
